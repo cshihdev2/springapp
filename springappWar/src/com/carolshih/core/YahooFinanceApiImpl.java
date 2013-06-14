@@ -10,6 +10,12 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.TreeMap;
 
+
+/**
+ * @author carol
+ * This is a concrete class that implements FinanceApi. 
+ * The class is used to make API to Yahoo Finance 
+ */
 public class YahooFinanceApiImpl implements FinanceApi{
 	
 	

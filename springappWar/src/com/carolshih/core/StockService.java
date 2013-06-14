@@ -3,12 +3,23 @@ package com.carolshih.core;
 import java.util.Map;
 import java.util.TreeMap;
 
+/**
+ * @author carol
+ * This is the business logic for stock service processing
+ * financeApiService is wired in home-servlet.xml 
+ *
+ */
 public class StockService {
 
 	
 	private FinanceApi financeApiService;
 	
 	
+	/**
+	 * @param symbol
+	 * @param fields
+	 * @return
+	 */
 	public Map<String, String> getStock(String symbol, String fields){
 		
 		TreeMap<String, String> result = new TreeMap<String, String>();
@@ -22,6 +33,9 @@ public class StockService {
 		
 	}
 
+	/**
+	 * @return
+	 */
 	public Map<String, String> getAvailableFields(){
 		return financeApiService.getAvailableReportFields();
 	}

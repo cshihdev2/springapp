@@ -1,8 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>   
-    
-<%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>
-<%@taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <!DOCTYPE>
 <html>
 <head>
@@ -14,9 +13,11 @@
 
 Select the following projects:
 <ul>
-<li><a href="/springapp/stock">Lookup Stock</a></li>
-<li><a href="/springapp/golf">Golf Driving Distance</a></li>
+<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
+<li><a href="${contextPath}/stock">Lookup Stock</a></li>
+<li><a href="${contextPath}/golf">Golf Driving Distance</a></li>
 </ul>
+
 
 </body>
 </html>

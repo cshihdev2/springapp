@@ -11,6 +11,7 @@ html,body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
+	font-family: arial,helvetica,sans-serif;
 }
 
 #map-canvas {
@@ -23,6 +24,7 @@ html,body {
 #text-canvas {
 	height: 15%;
 	font-size: 2em;
+	margin: 10px;
 }
 </style>
 <script
@@ -102,7 +104,7 @@ html,body {
 </script>
 </head>
 <body>
-	<div>This app will calculate the distance in yards between two marks on the map</div>
+	<h1>This app will calculate the distance in yards between two marks on the map</h1>
 	<div id="map-canvas"></div>
 	<div id="text-canvas"></div>
 </body>
